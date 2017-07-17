@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5FE1B90E-3A46-4960-95A4-98F723F0440B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDC83BB2-344D-4224-A203-C6C4A9DE55D1}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Revalee", "src\Revalee\Revalee.xproj", "{5E1615B5-F17E-4E4B-BAEC-B00A10098226}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5E1615B5-F17E-4E4B-BAEC-B00A10098226} = {5FE1B90E-3A46-4960-95A4-98F723F0440B}
+	EndGlobalSection
+EndGlobal
