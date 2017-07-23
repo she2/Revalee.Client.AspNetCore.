@@ -10,7 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Revalee", "src\Revalee\Revalee.xproj", "{5E1615B5-F17E-4E4B-BAEC-B00A10098226}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Revalee.NetCore", "src\Revalee.NetCore\Revalee.NetCore.xproj", "{BE7836B5-3802-4AC1-B786-0C1E70CC12F3}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Revalee.SampleSite.NetCore", "src\Revalee.SampleSite.NetCore\Revalee.SampleSite.NetCore.xproj", "{775BD03B-5555-45BB-AF22-0811CC542919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,15 +20,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E1615B5-F17E-4E4B-BAEC-B00A10098226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7836B5-3802-4AC1-B786-0C1E70CC12F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7836B5-3802-4AC1-B786-0C1E70CC12F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7836B5-3802-4AC1-B786-0C1E70CC12F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7836B5-3802-4AC1-B786-0C1E70CC12F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{775BD03B-5555-45BB-AF22-0811CC542919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{775BD03B-5555-45BB-AF22-0811CC542919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{775BD03B-5555-45BB-AF22-0811CC542919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{775BD03B-5555-45BB-AF22-0811CC542919}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{5E1615B5-F17E-4E4B-BAEC-B00A10098226} = {5FE1B90E-3A46-4960-95A4-98F723F0440B}
+		{BE7836B5-3802-4AC1-B786-0C1E70CC12F3} = {5FE1B90E-3A46-4960-95A4-98F723F0440B}
+		{775BD03B-5555-45BB-AF22-0811CC542919} = {5FE1B90E-3A46-4960-95A4-98F723F0440B}
 	EndGlobalSection
 EndGlobal
