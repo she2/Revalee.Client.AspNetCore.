@@ -2,37 +2,39 @@
 <package >
   <metadata>
     <id>Revalee.NetCore</id>
-    <version>1.0.0</version>
+    <version>1.2.0</version>
     <title>Revalee Client For .Net Core</title>
     <authors>Shittu Joseph Olugbenga</authors>
     <owners>She2gbenga</owners>
-     <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
+    <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-	<summary>Revalee Client for AspNetCore</summary>
-    <description>Revalee is a Windows Service used to schedule callbacks for web applications. It simplifies a web application's workflow when events are required *after* the normal handling of web requests. This library allows Revalee callback requests to be easily embedded in web application code.
+    <summary>Revalee Client for AspNetCore</summary>
+    <description>
+      Revalee is a Windows Service used to schedule callbacks for web applications. It simplifies a web application's workflow when events are required *after* the normal handling of web requests. This library allows Revalee callback requests to be easily embedded in web application code.
 
-This NuGet package requires installation of the Revalee Windows Service available for download at the Project Site or at the GitHub repository (SageAnalytic/Revalee).</description>
+      This NuGet package requires installation of the Revalee Windows Service available for download at the Project Site or at the GitHub repository (SageAnalytic/Revalee).
+    </description>
     <releaseNotes>
-	This is a client for .NetCore
-	</releaseNotes>
-   <copyright>Copyright © Shittu Joseph Olugbenga</copyright>
+      This is a client for .NetCore
+    </releaseNotes>
+    <copyright>Copyright © Shittu Joseph Olugbenga</copyright>
     <tags>aspnetcore callback web background scheduled tasks scheduling jobs workers aspnet asp.net revalee mvc</tags>
-<serviceable>true</serviceable>
- <dependencies>
-<group targetFramework=".NETStandard1.6">
-        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="1.1.0" />
-        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="1.1.0" />
-        <dependency id="Microsoft.AspNetCore.Mvc.ViewFeatures" version="1.1.0" />
-        <dependency id="Microsoft.AspNetCore.Routing.Abstractions" version="1.1.0" />
-        <dependency id="Microsoft.Extensions.Caching.Memory" version="1.1.0" />
-		<dependency id="Microsoft.Extensions.Configuration.Abstractions" version="1.1.0" />
-		<dependency id="Microsoft.Extensions.Configuration.Binder" version="1.1.0" />
-		<dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="1.1.0" />
-		<dependency id="System.Diagnostics.FileVersionInfo" version="4.3.0" />
-		<dependency id="System.Net.Requests" version="4.3.0" />
-		<dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" />
+    <serviceable>true</serviceable>
+    <dependencies>
+      <group targetFramework=".NETStandard1.6">
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="1.1.3" />
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="1.1.2" />
+        <!--<dependency id="Microsoft.AspNetCore.Mvc.ViewFeatures" version="1.1.0" />-->
+        <!--<dependency id="Microsoft.AspNetCore.Routing.Abstractions" version="1.1.0" />-->
+        <dependency id="Microsoft.Extensions.Caching.Memory" version="1.1.2" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="1.1.2" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="1.1.2" />
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="1.1.1" />
+        <dependency id="System.Diagnostics.FileVersionInfo" version="4.3.0" />
+        <dependency id="System.Net.Requests" version="4.3.0" />
+        <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" />
         <dependency id="NETStandard.Library" version="1.6.1" />
       </group>
     </dependencies>
- </metadata>
+  </metadata>
 </package>

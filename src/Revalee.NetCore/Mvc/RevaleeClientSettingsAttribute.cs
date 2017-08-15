@@ -13,8 +13,8 @@ namespace Revalee.NetCore.Mvc
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
     public sealed class RevaleeClientSettingsAttribute : ActionFilterAttribute
     {
-        private Uri _ServiceBaseUri;
-        private int? _RequestTimeout;
+        private Uri _serviceBaseUri;
+        private int? _requestTimeout;
 
         /// <summary>Gets or sets the service base URL used to make callback requests.</summary>
         /// <returns>The service base URL used to make callback requests.</returns>
@@ -22,22 +22,22 @@ namespace Revalee.NetCore.Mvc
         {
             get
             {
-                if (_ServiceBaseUri == null)
+                if (_serviceBaseUri == null)
                 {
                     return null;
                 }
 
-                return _ServiceBaseUri.ToString();
+                return _serviceBaseUri.ToString();
             }
             set
             {
                 if (string.IsNullOrEmpty(value))
                 {
-                    _ServiceBaseUri = null;
+                    _serviceBaseUri = null;
                 }
                 else
                 {
-                    _ServiceBaseUri = new ServiceBaseUri(value);
+                    _serviceBaseUri = new ServiceBaseUri(value);
                 }
             }
         }
@@ -49,9 +49,9 @@ namespace Revalee.NetCore.Mvc
         {
             get
             {
-                if (_RequestTimeout.HasValue)
+                if (_requestTimeout.HasValue)
                 {
-                    return _RequestTimeout.Value;
+                    return _requestTimeout.Value;
                 }
                 else
                 {
@@ -62,16 +62,16 @@ namespace Revalee.NetCore.Mvc
             {
                 if (value < -1)
                 {
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 }
 
                 if (value == 0)
                 {
-                    _RequestTimeout = null;
+                    _requestTimeout = null;
                 }
                 else
                 {
-                    _RequestTimeout = value;
+                    _requestTimeout = value;
                 }
             }
         }
@@ -90,15 +90,15 @@ namespace Revalee.NetCore.Mvc
                 throw new ArgumentNullException(nameof(filterContext.HttpContext));
             }
 
-            if (_RequestTimeout.HasValue)
+            if (_requestTimeout.HasValue)
             {
 
-                filterContext.HttpContext.Items[SettingsContextItemKeys.REQUEST_TIMEOUT_APP_SETTING_KEY] = _RequestTimeout;
+                filterContext.HttpContext.Items[SettingsContextItemKeys.REQUEST_TIMEOUT_APP_SETTING_KEY] = _requestTimeout;
             }
 
-            if (_ServiceBaseUri != null)
+            if (_serviceBaseUri != null)
             {
-                filterContext.HttpContext.Items[SettingsContextItemKeys.SERVICE_BASE_URI_APP_SETTING_KEY] = _ServiceBaseUri;
+                filterContext.HttpContext.Items[SettingsContextItemKeys.SERVICE_BASE_URI_APP_SETTING_KEY] = _serviceBaseUri;
             }
         }
     }
